@@ -6,3 +6,7 @@ jobs:
     steps:
       - name: Step_1
         run: echo Hello world of GitHub Actions!
+      - name: Step_2
+        run: |
+          echo First line
+          echo Second line
