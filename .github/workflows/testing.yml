@@ -26,6 +26,7 @@ jobs:
           pip3 install pytest
           pip3 install pytest-ordering
           pip3 install selenium
+          pip list
           python -m pytest -s -v
     
   
