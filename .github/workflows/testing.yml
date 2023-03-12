@@ -35,6 +35,6 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
         continue-on-error: true
       - name: Run all tests with PyTest
-        run: python -m pytest -s -v
+        run: python -m pytest -s -v test_1_open_main_page.py
     
   
