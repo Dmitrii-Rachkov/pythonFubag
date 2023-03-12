@@ -25,6 +25,7 @@ jobs:
           python -m pip install --upgrade pip
           pip3 install pytest
           pip3 install pytest-ordering
+          pip3 install selenium
           python -m pytest -s -v
     
   
