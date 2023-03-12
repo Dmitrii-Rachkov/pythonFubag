@@ -1,0 +1,21 @@
+name: Run all test for pythonFubag project
+
+on: push
+
+jobs:
+  build:
+  
+    runs-on: windows-latest
+    
+    steps:
+      - name: Get code from repository
+        uses: actions/checkout@v3
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with: 
+          python-version: '3.11'
+          architecture: 'x64'
+      - name: Display Python version
+        run: python -V
+    
+  
