@@ -34,9 +34,8 @@ jobs:
           # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
         continue-on-error: true
+        
       - name: Run all tests with PyTest
-        run: |
-          cd D:\a\pythonFubag\pythonFubag\tests
-          python -m pytest -s -v test_1_open_main_page.py
+        run: python -m pytest -s -v
     
   
